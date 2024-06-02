@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Underground Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Underground Shop</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Add Deal</a>
+      <a href="#">Search Deals</a>
+    </nav>
+  </header>
+  <main>
+    <section id="add-deal">
+      <h2>Add a Deal</h2>
+      <form action="add-deal.php" method="post">
+        <label for="deal-title">Deal Title:</label>
+        <input type="text" name="deal-title" id="deal-title" required>
+        <label for="deal-description">Deal Description:</label>
+        <textarea name="deal-description" id="deal-description" required></textarea>
+        <label for="deal-link">Deal Link:</label>
+        <input type="url" name="deal-link" id="deal-link" required>
+        <button type="submit">Add Deal</button>
+      </form>
+    </section>
+    <section id="search-deals">
+      <h2>Search Deals</h2>
+      <form action="search-deals.php" method="get">
+        <label for="deal-category">Deal Category:</label>
+        <select name="deal-category" id="deal-category">
+          <option value="">All Categories</option>
+          <!-- Add more deal categories here -->
+        </select>
+        <button type="submit">Search Deals</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; Underground Shop 2023</p>
+  </footer>
+</body>
+</html>
